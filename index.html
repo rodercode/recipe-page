@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="app.js" defer></script>
     <title>Food</title>
@@ -12,6 +20,21 @@
     <div class="main-container">
       <header class="main-header">
         <h1 class="dish-title">Klassisk Pepperonipizza</h1>
+        <div class="icon-container">
+          <div class="rating-container">
+            <i class="star-icon fa-solid fa-star"></i>
+            <i class="star-icon fa-solid fa-star"></i>
+            <i class="star-icon fa-solid fa-star"></i>
+            <i class="star-icon fa-regular fa-star"></i>
+            <i class="star-icon fa-regular fa-star"></i>
+            <span class="rating-number">3</span>
+          </div>
+          <div class="comment-container">
+            <i class="comment-icon fa-regular fa-comment"></i>
+            <span class="comment-number">1</span>
+          </div>
+        </div>
+
         <img
           class="dish-img"
           src="img/pizza.png"
@@ -31,10 +54,17 @@
         <section class="ingredients-section">
           <h2 class="ingredients-headline">Ingredients</h2>
           <div class="portion-container">
+            <button class="btn increase-portion"></button>
+            <button class="btn decrease-portion"></button>
+            <i class="fa-solid fa-user-group"></i>
+            <p>2</p>
+          </div>
+
+          <!-- <div class="portion-container">
             <button class="decrease-portion"></button>
             <spam class="portion-display"></spam>
             <button class="increase-portion"></button>
-          </div>
+          </div> -->
           <ul class="ingredients-list">
             <li class="ingredient-item">400 g guanciale, kindfläsk</li>
             <li class="ingredient-item">1-2 klyftor vitlök</li>
@@ -49,7 +79,7 @@
         </section>
 
         <section class="to-do-section">
-          <h2 class="do-this-title">Do This</h2>
+          <h2 class="do-this-title">To Do</h2>
 
           <ol class="to-do-list">
             <li class="to-do-item">
@@ -76,10 +106,10 @@
       </main>
 
       <section class="review-section">
-        <h1>11 reviews</h1>
+        <h2>11 Reviews</h2>
         <input
           type="text"
-          class="review-input--field-"
+          class="review-input-field-"
           placeholder="Write a review"
         />
         <button class="review-btn-send"></button>
@@ -108,8 +138,8 @@
         </div>
       </section>
 
-      <section class="related-links-section"></section>
-      <h2>Related recipe</h2>
+      <!-- <section class="related-links-section">
+        <h2>Related recipe</h2>
       <div class="related-links-upper-section">
         <a class="related-link" href="">
           <img class="dish-img" src="" alt="" />
@@ -130,6 +160,7 @@
           <p class="dish-title"></p>
         </a>
       </div>
+      </section> -->
     </div>
   </body>
 </html>
