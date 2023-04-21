@@ -1,15 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .main-container {
   background-color: rgb(171, 171, 48);
 }
 
 .main-header .dish-title {
-  padding: 1em;
+  font-size: 1.875rem;
+  text-align: center;
+  padding: 0.75em;
   margin-bottom: 0.25em;
 }
 .main-header .dish-img {
