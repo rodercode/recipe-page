@@ -8,15 +8,25 @@
   margin-left: 2.5em;
   margin-bottom: 1.5em;
 
-  .stars-container {
+  .rating-container {
     .star-icon {
-      color: #fdcc0d;
-      font-size: 20px;
+      // color: #fdcc0d;
+      font-size: 18px;
+    }
+
+    .rating-number {
+      margin-left: 0.35em;
     }
   }
 
-  .comment-icon {
-    font-size: 22px;
+  .comment-container {
+    .comment-icon {
+      font-size: 20px;
+    }
+
+    .comment-number {
+      margin-left: 0.35em;
+    }
   }
 }
 
@@ -24,7 +34,7 @@
   .dish-title {
     font-size: 2.0625rem;
     text-align: center;
-    padding: 0.75em 0.75em 0.4em 0.75em;
+    padding: 0.75em 0.75em 0.5em 0.75em;
   }
   .stars-container a {
     opacity: 50%;
