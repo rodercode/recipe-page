@@ -1,13 +1,33 @@
 .main-container {
-  background-color: rgb(171, 171, 48);
+  background-color: #fff;
+}
+
+.icon-container {
+  display: flex;
+  gap: 2.5em;
+  margin-left: 2.5em;
+  margin-bottom: 1.5em;
+
+  .stars-container {
+    .star-icon {
+      color: #fdcc0d;
+      font-size: 20px;
+    }
+  }
+
+  .comment-icon {
+    font-size: 22px;
+  }
 }
 
 .main-header {
   .dish-title {
-    font-size: 1.875rem;
+    font-size: 2.0625rem;
     text-align: center;
-    padding: 0.75em;
-    margin-bottom: 0.25em;
+    padding: 0.75em 0.75em 0.4em 0.75em;
+  }
+  .stars-container a {
+    opacity: 50%;
   }
   .dish-img {
     width: 100%;
@@ -15,4 +35,6 @@
   }
 }
 
-// todo add spacing between element
+.checked {
+  color: orange;
+}
