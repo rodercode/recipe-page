@@ -5,4 +5,18 @@
   box-sizing: border-box;
 }
 
+.main-container {
+  background-color: rgb(171, 171, 48);
+}
 
+// todo set image width equal to main-container
+.main-header {
+  .dish-title {
+    padding: 1em;
+    margin-bottom: 0.25em;
+  }
+  .dish-img {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
