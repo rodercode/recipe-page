@@ -26,13 +26,17 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 2em 0 1em 0;
 }
 
 h3 {
-  font-size: 20px;
-  margin: 2em 0 1em 0;
+  font-size: 1.0625rem;
+  margin-bottom: 0.25em;
+}
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 p,
 li {
