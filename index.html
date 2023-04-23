@@ -11,12 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="dist/style.css" />
+    <script src="js/app.js" defer></script>
     <title>Food</title>
   </head>
   <body>
+    <!-- todo translate from English to Swedish -->
     <div class="main-container">
       <header class="main-header">
         <h1 class="dish-title">Klassisk Pepperonipizza</h1>
@@ -51,55 +51,88 @@
           </p>
         </section>
 
-        <section class="ingredients-section">
-          <h2 class="ingredients-headline">Ingredients</h2>
-          <div class="portion-container">
-            <button class="btn increase-portion"></button>
-            <button class="btn decrease-portion"></button>
-            <i class="fa-solid fa-user-group"></i>
-            <p>2</p>
+        <section class="portion-container">
+          <div class="portion-selector">
+            <button class="btn increase-portion-btn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="portion-display">
+              <span class="portion-number">2</span>
+              <i class="portion-icon fa-solid fa-utensils"></i>
+            </div>
+            <button class="btn decrease-portion-btn">
+              <i class="fa-solid fa-minus"></i>
+            </button>
           </div>
+        </section>
 
-          <!-- <div class="portion-container">
-            <button class="decrease-portion"></button>
-            <spam class="portion-display"></spam>
-            <button class="increase-portion"></button>
-          </div> -->
+        <section class="ingredients-section">
+          <h2 class="ingredients-headline">Ingredienser</h2>
           <ul class="ingredients-list">
-            <li class="ingredient-item">400 g guanciale, kindfläsk</li>
-            <li class="ingredient-item">1-2 klyftor vitlök</li>
-            <li class="ingredient-item">120 g pecorinoost</li>
-            <li class="ingredient-item">2 ägg</li>
-            <li class="ingredient-item">2 äggulor</li>
-            <li class="ingredient-item">2 dl vispgrädde</li>
-            <li class="ingredient-item">0.5 dl torrt vitt vin</li>
-            <li class="ingredient-item">0.5 dl färsk persilja, hackade</li>
-            <li class="ingredient-item">olivolja, till stekning</li>
+            <li class="ingredient-item">1 paket GØL pepperoni</li>
+            <li class="ingredient-item">2 pkt mozzarella</li>
+            <li class="ingredient-item">1 kruka färsk basilika</li>
+            <li class="ingredient-item">25 g jäst</li>
+            <li class="ingredient-item">25 dl vatten</li>
+            <li class="ingredient-item">2 msk olivolja</li>
+            <li class="ingredient-item">5 tsk salt</li>
+            <li class="ingredient-item">8 dl vetemjöl</li>
+            <li class="ingredient-item">400 g krossade tomater</li>
+            <li class="ingredient-item">2 msk tomatpure</li>
+            <li class="ingredient-item">1 msk oregano</li>
+            <li class="ingredient-item">3 klyftor vitlök</li>
+            <li class="ingredient-item">2 msk olivolja</li>
           </ul>
         </section>
 
         <section class="to-do-section">
-          <h2 class="do-this-title">To Do</h2>
+          <h2 class="do-this-title">Gör så här</h2>
 
           <ol class="to-do-list">
+            <h3 class="to-do-subheadline">PizzaDeg</h3>
             <li class="to-do-item">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-              voluptates omnis, odit laborum quam officia. Quisquam dolor
-              cupiditate incidunt quo.
-            </li>
-            <li class="to-do-item">Lorem ipsum dolor sit amet.</li>
-            <li class="to-do-item">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              facilis tempore, sit perferendis eligendi atque.
+              Smula jäst i en bunke och värm vattnet till 37 grader.
             </li>
             <li class="to-do-item">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, quam
-              eveniet autem dicta est dolore!
+              Häll på lite av vattnet och rör om tills jästen är helt upplöst.
+              Tillsätt sedan resten av vattnet, saltet, oljan och rör om.
             </li>
             <li class="to-do-item">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Exercitationem culpa distinctio consequuntur molestias quaerat
-              nulla pariatur sint a ea quidem!
+              Vetemjölet tillsätts lite i omgångar - Degen är färdig när den
+              släpper bunkens kant
+            </li>
+            <li class="to-do-item">
+              Låt jäsa under handduk 30-60 min till dubbel storlek.
+            </li>
+            <li class="to-do-item">
+              Låt jäsa under handduk 30-60 min till dubbel storlek.
+            </li>
+            <li class="to-do-item">
+              Knåda degen smidig på mjölat bakbord, dela i två och kavla ut på
+              bakplåtspapper.
+            </li>
+          </ol>
+          <ol>
+            <h3 class="to-do-subheadline">Tomatsås</h3>
+            <li class="to-do-item">Fräs vitlök och olja i några minuter.</li>
+            <li class="to-do-item">
+              Tillsätt de krossade tomaterna, tomatpure och oregano.
+            </li>
+            <li class="to-do-item">
+              Låt koka upp och smaka av med salt och peppar.
+            </li>
+          </ol>
+          <ol>
+            <h3 class="to-do-subheadline">Pizza</h3>
+            <li class="to-do-item">Sätt ugnen på 250 grader.</li>
+            <li class="to-do-item">
+              Pensla på tomatsås, lägg på pepperoni och avsluta med bitar av
+              mozzarella.
+            </li>
+            <li class="to-do-item">Baka pizzan i ugn ca 15 minuter.</li>
+            <li class="to-do-item">Servera med färska basilikablad!</li>
+            <li class="to-do-item">
+              tips: använd en pizzasten - för en extra krispig botten
             </li>
           </ol>
         </section>
@@ -137,30 +170,6 @@
           </p>
         </div>
       </section>
-
-      <!-- <section class="related-links-section">
-        <h2>Related recipe</h2>
-      <div class="related-links-upper-section">
-        <a class="related-link" href="">
-          <img class="dish-img" src="" alt="" />
-          <p class="dish-title"></p>
-        </a>
-        <a class="related-link" href="">
-          <img src="" alt="" class="dish-img" />
-          <p class="dish-title"></p>
-        </a>
-      </div>
-      <div class="related-links-botton-section">
-        <a href="" class="related-link">
-          <img src="" alt="" class="dish-img" />
-          <p class="dish-title"></p>
-        </a>
-        <a href="" class="related-link">
-          <img src="" alt="" class="dish-img" />
-          <p class="dish-title"></p>
-        </a>
-      </div>
-      </section> -->
     </div>
   </body>
 </html>
