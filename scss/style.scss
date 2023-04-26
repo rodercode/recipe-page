@@ -1,56 +1,99 @@
 @forward "general";
+// MAIN
+.main-container {
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-// todo Structure code
+// CONTAINER
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-// HEADER SECTION
-.main-header {
+.top-container {
+  background-color: #fff;
+  width: 100%;
+  height: 4em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+
+  .home-icon {
+    font-size: 24px;
+    padding-left: 1.25em;
+  }
+}
+
+// HEADER
+.header {
+  align-self: center;
+  flex: 1 1 450px;
+  padding: 2em 1em 2em 1em;
+
   .dish-title {
-    font-size: 2.0625rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
-    padding: 0.75em 0.75em 0.5em 0.75em;
+    margin-bottom: 1em;
   }
 
   .icon-container {
     display: flex;
     gap: 2.5em;
-    margin-left: 2.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 
     .rating-container {
       .star-icon {
         font-size: 1.125rem;
       }
-
-      .rating-number {
-        margin-left: 0.35em;
-      }
     }
-
     .comment-container {
       .comment-icon {
         font-size: 1.125rem;
       }
-
-      .comment-number {
-        margin-left: 0.35em;
-      }
     }
   }
+  .info {
+    flex: 1 1 400px;
+  }
+}
+
+// IMAGE
+.img-container {
+  flex: 1 1 450px;
   .dish-img {
+    border-radius: 12px;
     width: 100%;
-    margin-bottom: 1em;
+  }
+}
+
+// INGREDIENT-SECTION
+.ingredients-section {
+  flex-grow: 10;
+  flex: 1 1 450px;
+
+  .ingredients-list {
+    list-style-type: none;
   }
 }
 
 // PORTION SELECTOR
 .portion-container {
+  padding: 0;
+  margin-bottom: 3em;
+  width: 100%;
+
   .portion-selector {
     height: 2.75em;
     border: 1px solid rgb(167, 161, 161);
     background-color: #fff;
     display: flex;
-    margin: 60px 0em;
     border-radius: 10px;
+    overflow: visible;
 
     .portion-display {
       display: flex;
@@ -65,7 +108,7 @@
       }
     }
 
-    .btn {
+    .portion-btn {
       font-size: 1.5625rem;
       background-color: #fff;
       border: 0;
@@ -73,54 +116,47 @@
       cursor: pointer;
     }
 
-    .increase-portion-btn {
+    #increase-btn {
       border-right: 1px solid rgb(167, 161, 161);
       border-radius: 10px 0px 0px 10px;
     }
 
-    .decrease-portion-btn {
+    #decrease-btn {
       border-left: 1px solid rgb(167, 161, 161);
       border-radius: 0px 10px 10px 0px;
     }
   }
 }
 
-// INGREDIENT-SECTION
-.ingredients-section {
-  .ingredients-headline {
-    margin-top: 0;
-  }
-
-  .ingredients-list {
-    list-style-type: none;
-  }
-}
-
 // TO-DO SECTION
 .to-do-section {
-  margin-bottom: 5em;
+  flex: 1 1 450px;
+  order: 2;
+
   .to-do-subheadline {
-    margin: 2em 0 1em 0;
+    margin: 2em 0 1.5em 1.1em;
+  }
+
+  .to-do-item {
     margin-left: 1em;
-    text-transform: uppercase;
+    padding-left: 0.5em;
   }
 }
 
 // REVIEW SECTION
 .review-section {
-  .write-comment-container {
-    margin-bottom: 7em;
-
+  .input-comment-container {
     .review-input-field {
       width: 100%;
       height: 3em;
       border-radius: 2.2rem;
+      overflow: visible;
       padding-left: 1em;
       border: 1.5px solid black;
-      margin-bottom: 1.25em;
+      margin-bottom: 1em;
     }
 
-    .review-btn-send {
+    .send-btn {
       padding: 0.5em 1em;
       float: right;
       border-radius: 25px;
@@ -129,9 +165,46 @@
     }
   }
 
-  hr {
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-    background-color: grey;
+  .history-container {
+    margin-top: 6em;
+    .comment-text {
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main-container {
+    position: relative;
+    margin-top: 6em;
+    padding: 1em;
+    width: 70%;
+  }
+
+  .top-container {
+    .home-icon {
+      padding-left: 17%;
+    }
+  }
+
+  .header,
+  section {
+    padding: 0 5em;
+  }
+
+  .header {
+    margin-top: 5em;
+
+    .dish-title {
+      font-size: 2.125rem;
+      line-height: 42px;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
   }
 }
