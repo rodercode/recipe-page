@@ -1,3 +1,10 @@
+// VARIABLES
+$primary-color: #f2f4f3;
+$secondary-color: #63bf63;
+$effect-color: #7fd1ae;
+$text-color: #5a5555;
+$line-color: #252323;
+
 // BOILER PLATE
 * {
   margin: 0;
@@ -10,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #ded8d8;
+  background-color: #fff;
   color: #5a5555;
   font-family: sans-serif;
 }
@@ -24,6 +31,7 @@ h1,
 h2,
 h3 {
   font-weight: 600;
+  color: $secondary-color;
 }
 
 h2 {
@@ -36,6 +44,7 @@ h3 {
   line-height: 26px;
   font-size: 1rem;
   font-weight: 600px;
+  color: $secondary-color;
 }
 p,
 li,
@@ -48,7 +57,7 @@ li {
   font-weight: 400;
 }
 hr {
-  background-color: grey;
+  border: 1px solid $secondary-color;
   margin: 1em 0;
 }
 
@@ -62,4 +71,10 @@ li:last-child {
 a:visited,
 a:link {
   text-decoration: none;
+  color: $secondary-color;
+}
+
+a:hover,
+a:active {
+  color: $effect-color;
 }

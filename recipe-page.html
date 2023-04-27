@@ -1,0 +1,188 @@
+<!-- * inspiration websites  -->
+<!-- https://www.koket.se -->
+<!-- https://recept.se/ -->
+
+<!-- * food recipe-->
+<!-- https://www.göl.se/recept/recept-med-salami/klassisk-pepperonipizza/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+    <script src="js/app.js" defer></script>
+    <title>Food</title>
+  </head>
+  <body>
+    <div class="top-container">
+      <a href="index.html">
+        <i class="home-icon fa-solid fa-house"></i>
+      </a>
+    </div>
+        <div class="main-container">
+          <div class="container">
+            <header class="header">
+              <h1 class="dish-title">Klassisk pepperonipizza med mozzarella</h1>
+              <div class="icon-container">
+                <div class="time-container">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>20 min</span>
+                </div>
+                <div class="comment-container">
+                  <i class="comment-icon fa-regular fa-comment"></i>
+                  <span class="comment-number">1</span>
+                </div>
+              </div>
+              <div class="info">
+                <p>
+                  Ta den klassiska pepperonipizzan till nya höjder med GØL Pepperoni
+                  och färsk mozzarella! En pizza med pepperoni i sin enkelhet, sin
+                  genialitet. Det är en klassiker av en anledning, den är foolproof.
+                </p>
+              </div>
+            </header>
+            <div class="img-container">
+              <img
+                class="dish-img"
+                src="img/pizza.png"
+                alt="pepperoni pizza overview"
+              />
+            </div>
+            <section class="to-do-section">
+              <h2 class="do-this-title">Gör så här</h2>
+              <ol class="to-do-list">
+                <h3 class="to-do-subheadline">Pizzadeg</h3>
+                <li class="to-do-item">
+                  <span class="to-do-text">
+                    Smula jäst i en bunke och värm vattnet till 37 grader.
+                  </span>
+                </li>
+    
+                <li class="to-do-item">
+                  <span class="to-do-text">
+                    Häll på lite av vattnet och rör om tills jästen är helt upplöst.
+                    Tillsätt sedan resten av vattnet, saltet, oljan och rör om.
+                  </span>
+                </li>
+                <li class="to-do-item">
+                  <span class="to-do-text">
+                    Vetemjölet tillsätts lite i omgångar - Degen är färdig när den
+                    släpper bunkens kant
+                  </span>
+                </li>
+                <li class="to-do-item">
+                  <span class="to-do-text">
+                    Låt jäsa under handduk 30-60 min till dubbel storlek.
+                  </span>
+                </li>
+                <li class="to-do-item">
+                  <span class="to-do-text">
+                    Knåda degen smidig på mjölat bakbord, dela i två och kavla ut på
+                    bakplåtspapper.
+                  </span>
+                </li>
+              </ol>
+              <ol class="to-do-list">
+                <h3 class="to-do-subheadline">Tomatsås</h3>
+                <li class="to-do-item">
+                  <span class="to-do-text">
+                    Fräs vitlök och olja i några minuter.
+                  </span>
+                </li>
+                <li class="to-do-item">
+                  <span class="to-do-text">
+                    Tillsätt de krossade tomaterna, tomatpure och oregano.
+                  </span>
+                </li>
+                <li class="to-do-item">
+                  <span class="to-do-text">
+                    Låt koka upp och smaka av med salt och peppar.
+                  </span>
+                </li>
+              </ol>
+              <ol class="to-do-list">
+                <h3 class="to-do-subheadline">Pizza</h3>
+                <li class="to-do-item">
+                  <span class="to-do-text"> Sätt ugnen på 250 grader. </span>
+                </li>
+                <li class="to-do-item">
+                  <span class="to-do-text">
+                    Pensla på tomatsås, lägg på pepperoni och avsluta med bitar av
+                    mozzarella.
+                  </span>
+                </li>
+                <li class="to-do-item">
+                  <span class="to-do-text"> Baka pizzan i ugn ca 15 minuter. </span>
+                </li>
+                <li class="to-do-item">
+                  <span class="to-do-text"> Servera med färska basilikablad! </span>
+                </li>
+              </ol>
+            </section>
+            <section class="ingredients-section">
+              <h2 class="ingredients-headline">Ingredienser</h2>
+              
+              <section class="portion-container">
+                <div class="portion-selector">
+                  <button class="portion-btn" id="increase-btn">
+                    <i class="fa-solid fa-plus" id="plus-icon"></i>
+                  </button>
+                  <div class="portion-display">
+                    <span class="portion-number">2</span>
+                    <i class="portion-icon fa-solid fa-utensils"></i>
+                  </div>
+                  <button class="portion-btn" id="decrease-btn">
+                    <i class="fa-solid fa-minus" id="minus-icon"></i>
+                  </button>
+                </div>
+              </section>
+              <ul class="ingredients-list">
+                <li class="ingredient-item"><span class="item-quantity">0.5</span> paket GØL pepperoni</li>
+                <li class="ingredient-item"><span class="item-quantity">1</span> pkt mozzarella</li>
+                <li class="ingredient-item"><span class="item-quantity">0.5</span> kruka färsk basilika</li>
+                <li class="ingredient-item"><span class="item-quantity">12.5</span> g jäst</li>
+                <li class="ingredient-item"><span class="item-quantity">12.5</span> dl vatten</li>
+                <li class="ingredient-item"><span class="item-quantity">1</span> msk olivolja</li>
+                <li class="ingredient-item"><span class="item-quantity">2.5</span> tsk salt</li>
+                <li class="ingredient-item"><span class="item-quantity">4</span> dl vetemjöl</li>
+                <li class="ingredient-item"><span class="item-quantity">200</span> g krossade tomater</li>
+                <li class="ingredient-item"><span class="item-quantity">1</span> msk tomatpure</li>
+                <li class="ingredient-item"><span class="item-quantity">0.5</span> msk oregano</li>
+                <li class="ingredient-item"><span class="item-quantity">1.5</span> klyftor vitlök</li>
+                <li class="ingredient-item"><span class="item-quantity">1</span> msk olivolja</li>
+              </ul>
+            </section>
+          </div>
+          <section class="review-section">
+            <div class="input-comment-container">
+              <h2>16 recensioner</h2>
+              <input
+                type="text"
+                class="review-input-field"
+                placeholder="Skriv en recension"
+              />
+              <button class="send-btn">Skicka</button>
+            </div>
+            <div class="history-container">
+              <div class="comment">
+                <hr />
+                <h3>Hilda B</h3>
+                <p>
+                  Bästa pizzan någonsin!
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+  </body>
+</html>

@@ -5,9 +5,11 @@ const displayPortion = document.querySelector(".portion-number");
 const sendBtn = document.querySelector(".send-btn");
 const historyContainer = document.querySelector(".history-container");
 const reviewInputField = document.querySelector(".review-input-field");
+const commentNumber = document.querySelector(".comment-number");
 
 // Variables
 portionValue = Number(displayPortion.textContent);
+let amountOfComments = Number(commentNumber.textContent);
 
 // * Food Portion Feature
 
@@ -27,8 +29,10 @@ function changePortion(e) {
   }
   // Decrease portion by one
   else if (btnId == "minus-icon" || btnId == "decrease-btn") {
-    updateQuantity("-");
-    portionValue -= 1;
+    if (portionValue > 1) {
+      updateQuantity("-");
+      portionValue -= 1;
+    }
   }
   displayPortion.textContent = portionValue;
 }
@@ -54,18 +58,21 @@ function updateQuantity(operator) {
 
 // * Add Comment Feature
 
-function createElement(selector) {
-  return document.createElement(selector);
-}
+const createEl = (selector) => document.createElement(selector);
 
 function assignValue(element, value) {
   element.innerHTML = value;
 }
 
+function cleanField() {
+
+  
+}
+
 function addComment(text) {
-  const line = createElement("hr");
-  const username = createElement("h3");
-  const comment = createElement("p");
+  const line = createEl("hr");
+  const username = createEl("h3");
+  const comment = createEl("p");
 
   assignValue(username, "Unknown");
   assignValue(comment, text);
@@ -78,5 +85,8 @@ sendBtn.addEventListener("click", function () {
   const text = reviewInputField.value;
   if (text.trim() !== "") {
     addComment(text);
+    amountOfComments++;
+    commentNumber.textContent = amountOfComments;
+    reviewInputField.value = "";
   }
 });
